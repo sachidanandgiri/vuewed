@@ -1,5 +1,5 @@
 <template>
-    <div class="main-content bg-default">
+    <div class="main-content bg-img">
         <!-- Navbar -->
         <base-nav class="navbar-top navbar-horizontal navbar-dark"
                   containerClasses="px-4 container"
@@ -33,7 +33,7 @@
                     <li class="nav-item">
                         <router-link class="nav-link nav-link-icon" to="/">
                             <i class="ni ni-planet"></i>
-                            <span class="nav-link-inner--text">My site</span>
+                            <span class="nav-link-inner--text">Dashboard</span>
                         </router-link>
                     </li>
                     <li class="nav-item">
@@ -48,17 +48,23 @@
                             <span class="nav-link-inner--text">Login</span>
                         </router-link>
                     </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link nav-link-icon" to="/profile">
+                            <i class="ni ni-single-02"></i>
+                            <span class="nav-link-inner--text">Profile</span>
+                        </router-link>
+                    </li>
                 </ul>
             </template>
         </base-nav>
         <!-- Header -->
-        <div class="header bg-gradient-success py-7 py-lg-8">
-            <div class="separator separator-bottom separator-skew zindex-100">
-                <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+        <div class="py-7 py-lg-8">
+            <!-- <div class="separator separator-bottom separator-skew zindex-100"> -->
+                <!-- <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
                      xmlns="http://www.w3.org/2000/svg">
                     <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
-                </svg>
-            </div>
+                </svg> -->
+            <!-- </div> -->
         </div>
         <!-- Page content -->
         <div class="container mt--8 pb-5">

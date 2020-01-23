@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import DashboardLayout from '@/layout/DashboardLayout'
-import AuthLayout from '@/layout/AuthLayout'
+// import AuthLayout from '@/layout/AuthLayout'
+import AuthLayout from '@/layout/AuthLayout1'
 Vue.use(Router)
 
 const routes = [
@@ -54,6 +55,11 @@ const routes = [
         path: '/register',
         name: 'register',
         component: () => import(/* webpackChunkName: "demo" */ './views/Register.vue')
+      },
+      {
+        path: '/registerme',
+        name: 'registerme',
+        component: () => import(/* webpackChunkName: "demo" */ './views/RegisterMe.vue')
       }
     ]
   }
